@@ -386,15 +386,15 @@ Dưới đây là phiên bản viết lại của phần hướng dẫn bạn đ
     Hoặc để khởi động worker trên từng node, bạn có thể chạy lệnh sau trên mỗi worker:
 
     ```bash
-    $SPARK_HOME/sbin/start-slave.sh spark://hadoop-master:7077
+    $SPARK_HOME/sbin/start-slave.sh spark://hadoop:7077
     ```
 
 ### **5. Kiểm Tra Cụm Spark**
 
--   Mở trình duyệt và truy cập vào **Web UI** của Spark Master tại địa chỉ: `http://hadoop-master:8080` để kiểm tra trạng thái của cụm và xác nhận các worker đã kết nối với master hay chưa.
+-   Mở trình duyệt và truy cập vào **Web UI** của Spark Master tại địa chỉ: `http://hadoop:8080` để kiểm tra trạng thái của cụm và xác nhận các worker đã kết nối với master hay chưa.
 -   Chạy một ứng dụng Spark trên cụm để kiểm tra:
     ```bash
-    $SPARK_HOME/bin/spark-shell --master spark://hadoop-master:7077
+    $SPARK_HOME/bin/spark-shell --master spark://hadoop:7077
     ```
 
 ---
